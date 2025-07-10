@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+}
+.credit {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  color: #ffffff;
+}
+.main {
+  width: 430px;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid white;
+  background: linear-gradient(to bottom right, #f96bd7, #3b14c2);
+  position: relative;
+}
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+}
+.search input {
+  flex: 1;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+}
+.search button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid black;
+}
+.output {
+  width: 100%;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: height 0.3s;
+  color: white;
+}
+.img {
+  width: 50%;
+}
+.img img {
+  width: 100%;
+  object-fit: cover;
+}
+.error {
+  margin: 20px 0px;
+  width: 80%;
+}
+.error img {
+  width: 100%;
+}
+.group {
+  display: flex;
+  width: 100%;
+  /* gap: 10px; */
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px 0px;
+  background-color: #ffffff71;
+  color: black;
+}
+.item {
+  height: 90px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 10px;
+  border-left: 1px solid black;
+}
+.item1 {
+  border: none;
+}
+.text {
+  font-size: 14px;
+  color: aliceblue;
+}
+.value {
+  font-size: 20px;
+  color: black;
+}
+.icon {
+  align-content: center;
+  font-size: 26px;
+}
+.temp {
+  font-size: 42px;
+}
+.city {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.state {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+@media (max-width: 600px) {
+  .main {
+    width: 85%;
+    padding: 10px;
+  }
+  .img {
+    width: 70%;
+  }
+  .img img {
+    width: 100%;
+  }
+  .item1 {
+    border: none;
+  }
+  .value {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 24px;
+  }
+  .temp {
+    font-size: 34px;
+  }
+  .city {
+    font-size: 20px;
+  }
+  .feels{
+    display: none;
+  }
+}
+
